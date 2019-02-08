@@ -31,7 +31,7 @@ Perfect Pitch is a web application that is meant to help people give a one minut
 
     - Clone the Repository
     - Install python 3.6
-    - Run ./run.py
+    - Run ./start.sh
 
 ## Known bugs
 
