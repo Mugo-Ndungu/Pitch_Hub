@@ -55,7 +55,7 @@ def technology():
     pitch = Pitch.query.filter_by().first()
     return render_template('technology.html', pitch=pitch, techpitch=techpitch)
 
-@main.route('/pitches/new/', methods=['GET', 'POST'])
+@main.route('/pitches', methods=['GET', 'POST'])
 @login_required
 def new_pitch():
     form = PitchForm()
@@ -75,7 +75,7 @@ def new_pitch():
     return render_template('pitches.html', form=form)
 
 
-@main.route('/comment/new/<int:pitch_id>', methods=['GET', 'POST'])
+@main.route('/comment<int:pitch_id>', methods=['GET', 'POST'])
 @login_required
 def new_comment(pitch_id):
     form = CommentForm()

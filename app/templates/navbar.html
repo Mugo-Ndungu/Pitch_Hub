@@ -17,9 +17,10 @@
                 <li><a href="/">Contact Me</a></li>
             </ul>
             <ul class="nav navbar-nav" style="float: right">
-                <li><a href="/pitches/new/"> New Pitch </a></li>
+                <li><a href="/pitches"> New Pitch </a></li>
                 {% if current_user.is_authenticated %}
                 <li><a href="{{url_for('main.profile',uname=current_user.username)}}">Profile</a></li>
+                <li><a href="{{url_for('main.new_pitch')}}">Pitches</a></li>
                 
                 <li><a href="{{url_for('auth.logout')}}">Sign out</a></li>
                 {% else %}
