@@ -8,7 +8,7 @@
 
 ## Description
 
-Perfect Pitch is a web application that is meant to help people give a one minute pitch and can view other peoples pitches. to visit the site Click [here](https://perfectpitch.herokuapp.com/) to see the live site
+Perfect Pitch is a web application that is meant to help people give a one minute pitch and can view other peoples pitches. to visit the site Click [here](https://mugopitch.herokuapp.com/) to see the live site
 
 ## Specifications
 
