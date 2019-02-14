@@ -21,11 +21,10 @@ def index():
     techpitch = Pitch.query.filter_by(category="techpitch")
     pickuppitch = Pitch.query.filter_by(category="pickuppitch")
 
-    upvotes = Upvote.get_all_upvotes(pitch_id=Pitch.id)
+    # upvotes = Upvote.get_all_upvotes(pitch_id=Pitch.id)
 
     return render_template('index.html', title=title, pitch=pitch, pickuppitch=pickuppitch,
-                           interviewpitch=interviewpitch, businesspitch=businesspitch, techpitch=techpitch,
-                           upvotes=upvotes)
+                           interviewpitch=interviewpitch, businesspitch=businesspitch, techpitch=techpitch)
 
 
 
@@ -59,7 +58,7 @@ def technology():
 @login_required
 def new_pitch():
     form = PitchForm()
-    my_upvotes = Upvote.query.filter_by(pitch_id=Pitch.id)
+    # my_upvotes = Upvote.query.filter_by(pitch_id=Pitch.id)
     if form.validate_on_submit():
         description = form.description.data
         title = form.title.data
@@ -98,7 +97,7 @@ def new_comment(pitch_id):
 def upvote(pitch_id):
     pitch = Pitch.query.get(pitch_id)
     user = current_user
-    pitch_upvotes = Upvote.query.filter_by(pitch_id=pitch_id)
+    # pitch_upvotes = Upvote.query.filter_by(pitch_id=pitch_id)
 
     if Upvote.query.filter(Upvote.user_id == user.id, Upvote.pitch_id == pitch_id).first():
         return redirect(url_for('main.index'))
