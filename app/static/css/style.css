@@ -1,0 +1,25 @@
+body{
+    background: url("../img/abstract-art-black-background-1040499.jpg")no-repeat center center fixed;
+    color: #FFF;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.landing{
+    position: absolute;
+    margin: auto;
+    top: 35%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 18px;
+    width: 400px;
+    height: 400px;
+    border-radius: 3px;
+}
+button{
+    position: absolute;
+    left: 35%;
+}
+

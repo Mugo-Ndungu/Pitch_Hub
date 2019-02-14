@@ -1,0 +1,29 @@
+body{
+    background-color: #f4f4f4;
+}
+.form-box{
+    background-color: #FFF;
+    margin-left: 180px;
+    margin-top: 100px;
+    width: 400px;
+    box-shadow: 0 3px 6px 0px rgba(0,0,0,0.16), 0 3px 6px 0px rgba(0,0,0,0.23);
+  }
+  #reg{
+      margin-left: 245px;
+  }
+  .head {
+     margin: 10px 0px;
+    color: #fff;
+    font-size: 34px;
+    font-weight: normal;
+    padding: 30px 0;
+    text-align: center;
+    text-transform: uppercase;
+    background: #6498fe;
+  }
+  .form-group {
+    margin-bottom: 15px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }

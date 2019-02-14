@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+{% endblock %}
+
+<!-- Block Content -->
+{% block content %}
+    <div class="container">
+
+        <div class="landing">
+            <p  class="text-center"> <strong>Pitch Hub</strong> When you talk about your company, you want to be brief and extremely clear. This helps people quickly understand your business and ask more questions if they are interested.</p>
+            <button type="button" class="btn btn-primary">Lets Get started</button>
+        </div>
+    </div>
+{% endblock content %}
