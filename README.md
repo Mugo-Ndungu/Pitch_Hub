@@ -1,4 +1,4 @@
-# [PERFECT PITCH](https://perfectpitch.herokuapp.com/)
+# [PERFECT PITCH](https://mugopitch.herokuapp.com/)
 
 ## Perfect Pitch is a web application that is meant to help people give a one minute pitch
 
