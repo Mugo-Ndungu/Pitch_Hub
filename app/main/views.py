@@ -32,7 +32,7 @@ def index():
 def pickup():
     pitch = Pitch.query.filter_by().first()
     pickuppitch = Pitch.query.filter_by(category="pickuppitch")
-    return render_template('pick-up.html', pitch=pitch, pickuppitch=pickuppitch)
+    return render_template('pickup.html', pitch=pitch, pickuppitch=pickuppitch)
 
 @main.route('/business', methods=['GET', 'POST'])
 def business():
